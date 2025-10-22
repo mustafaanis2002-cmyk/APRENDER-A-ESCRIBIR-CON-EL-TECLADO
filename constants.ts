@@ -46,10 +46,39 @@ export const LEVELS: Level[] = [
     pointsToUnlock: 5000,
     color: 'bg-red-500',
   },
+  {
+    level: 6,
+    title: 'Palabras y Números',
+    challenges: ['año 2024', '1 mas 1 son 2', 'tengo 10 años', 'el numero 100', 'mi telefono es 123456789', 'la carrera fue en el 2023'],
+    pointsPerCharacter: 12,
+    pointsToUnlock: 8000,
+    color: 'bg-indigo-500',
+  },
+  {
+    level: 7,
+    title: 'Práctica con Mayúsculas',
+    challenges: ['Mi nombre es Juan.', '¿Donde esta el baño?', '¡Que dia es hoy!', 'El perro se llama Tobi.', 'Madrid es la capital de España.'],
+    pointsPerCharacter: 13,
+    pointsToUnlock: 12000,
+    color: 'bg-pink-500',
+  },
+  {
+    level: 8,
+    title: 'Práctica de Párrafos',
+    challenges: [
+        'La tecnologia ha cambiado el mundo. Ahora podemos comunicarnos con gente de todo el planeta en segundos.',
+        'Aprender a teclear rapido es una habilidad muy util. Te ayuda en la escuela, en el trabajo y en tu vida diaria.',
+        'Los videojuegos pueden ser divertidos y educativos. Algunos juegos enseñan historia, matematicas o a resolver problemas.'
+    ],
+    pointsPerCharacter: 15,
+    pointsToUnlock: 18000,
+    color: 'bg-teal-500',
+  },
 ];
 
 
 export const KEYBOARD_LAYOUT = [
+  ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'],
   ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
   ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'ñ'],
   ['z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', '-'],
@@ -58,18 +87,18 @@ export const KEYBOARD_LAYOUT = [
 
 export const FINGER_MAP: { [key: string]: string } = {
   // Left Hand
-  'q': 'left-pinky', 'a': 'left-pinky', 'z': 'left-pinky',
-  'w': 'left-ring', 's': 'left-ring', 'x': 'left-ring',
-  'e': 'left-middle', 'd': 'left-middle', 'c': 'left-middle',
-  'r': 'left-index', 'f': 'left-index', 'v': 'left-index',
-  't': 'left-index', 'g': 'left-index', 'b': 'left-index',
+  '1': 'left-pinky', 'q': 'left-pinky', 'a': 'left-pinky', 'z': 'left-pinky', '¡': 'left-pinky', '!': 'left-pinky',
+  '2': 'left-ring', 'w': 'left-ring', 's': 'left-ring', 'x': 'left-ring',
+  '3': 'left-middle', 'e': 'left-middle', 'd': 'left-middle', 'c': 'left-middle',
+  '4': 'left-index', 'r': 'left-index', 'f': 'left-index', 'v': 'left-index',
+  '5': 'left-index', 't': 'left-index', 'g': 'left-index', 'b': 'left-index',
   
   // Right Hand
-  'y': 'right-index', 'h': 'right-index', 'n': 'right-index',
-  'u': 'right-index', 'j': 'right-index', 'm': 'right-index',
-  'i': 'right-middle', 'k': 'right-middle', ',': 'right-middle',
-  'o': 'right-ring', 'l': 'right-ring', '.': 'right-ring',
-  'p': 'right-pinky', 'ñ': 'right-pinky', '-': 'right-pinky',
+  '6': 'right-index', 'y': 'right-index', 'h': 'right-index', 'n': 'right-index',
+  '7': 'right-index', 'u': 'right-index', 'j': 'right-index', 'm': 'right-index',
+  '8': 'right-middle', 'i': 'right-middle', 'k': 'right-middle', ',': 'right-middle',
+  '9': 'right-ring', 'o': 'right-ring', 'l': 'right-ring', '.': 'right-ring',
+  '0': 'right-pinky', 'p': 'right-pinky', 'ñ': 'right-pinky', '-': 'right-pinky', '?': 'right-pinky', '¿': 'right-pinky',
 
   // Thumbs
   ' ': 'thumbs',

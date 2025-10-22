@@ -35,7 +35,7 @@ const Keyboard: React.FC<KeyboardProps> = ({ targetKey, pressedKey }) => {
     <div className="w-full max-w-4xl mx-auto p-4 bg-gray-200 rounded-xl shadow-inner">
       <div className="flex flex-col items-center gap-2">
         {KEYBOARD_LAYOUT.map((row, rowIndex) => (
-          <div key={rowIndex} className={`flex gap-2 ${rowIndex === 3 ? 'w-full justify-center' : ''}`}>
+          <div key={rowIndex} className={`flex gap-2 ${rowIndex === 4 ? 'w-full justify-center' : ''}`}>
             {row.map((key) => (
               <div
                 key={key}
